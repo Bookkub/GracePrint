@@ -1,0 +1,34 @@
+<%- include('partials/header') %>
+    <div class="container">
+        <h1>Register</h1>
+        <form action="/register" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input type="text" class="form-control" name='username' placeholder="Your username">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Your password">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" name='firstName' placeholder="Your first name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" name='lastName' placeholder="Your username">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name='email' placeholder="Your E-mail address">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Profile Image</label>
+                <input type="file" class="form-control" name='profileImage' accspt="image/*">
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+            <a href="/prints">Go back</a>
+        </form>
+    </div>
+
+    <%- include('partials/footer') %>

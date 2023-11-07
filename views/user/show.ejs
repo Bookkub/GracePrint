@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+    <h1>User profile</h1>
+    <p>
+        <%= user.firstName + ' ' + user.lastName %>
+    </p>
+    <img src="<%= user.profileImage %>" height="300px">
+    <p>
+        <a href="mailto: <%= user.email %>">
+            <%= user.email %>
+        </a>
+    </p>
+    <h3>Your collections:</h3>
+    <ul>
+        <% prints.forEach(function(print){ %>
+            <li><a href="/prints/<%= print.id %>">
+                    <%= print.name %>
+                </a>
+            </li>
+            <% }) %>
+    </ul>
+
+    <%- include('../partials/footer') %>

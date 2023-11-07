@@ -1,0 +1,7 @@
+.index-image {
+    object-fit: cover;
+}
+
+#delete-form {
+    display: inline-block;
+}
